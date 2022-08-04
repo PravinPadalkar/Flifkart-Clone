@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 :root {
     --main-bg-color: #2874f0;
@@ -19,70 +23,56 @@ nav{
 }
 .logo{
     display: flex;
-   padding: 5px;
-   flex-direction: column;
-   position: relative;
-    left: 13vw;
+    padding: 5px;
+    flex-direction: column;
+    position: relative;
+    margin-left: 7vw;
 }
 .logo img{
-    width: 6vw;
+    width: 90px;
 }
 .logo span{
     margin-top: -3px;
-    font-size: 1vw;
+    font-size: 15px;
 }
 .logo span img{
-    width: 1vw;
+    width: 15px;
 }
 .search{
-    width: 28vw;
-    display: flex;
-    position: relative;
-    left: 16vw;
-  }
-.search input{
-    width: 25.6vw;
+    max-width: 35vw;
     height: 30px;
-}
-.search button{
-    margin-left: -3px;
-    background-color: white;
-    margin-top: 1px;
-    border-radius: 3px;
-}
-.search button img{
-    height:23px;
-    background-color: white;
-    cursor: pointer;
-}
-.loginbtn{
-    position: absolute;
-    width: 17vw;
-    left: 54vw;
-}
-.loginbtn ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 2vw;
+    border: 1px solid black;
+    outline: none;
     position: relative;
-    left: 7vw;
+    margin-left: 10px;
 }
-.loginbtn ul button {
-    width: 5vw;
+.search input{
+    display: inline;
+    width: 35vw;
+    height: 30px;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 600;
 }
-.loginbtn ul button a {
-   text-decoration: none;
+.btns{
+    min-height: 30px;
+    background-color: var(--main-bg-color);
+    position: absolute;
+    left: 65%;
+    display: flex;
 }
-.loginbtn ul li{
-    background-color: whitesmoke;
-    border-radius: 2px;
-    width: 43px;
-    text-align: center;
-}
-.loginbtn ul li a{
-    font-size: 22px;
+.btns button{
+    width: 70px;
+    height: 31px;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: white;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    margin: 0px 15px;
+} 
+button a{
     text-decoration: none;
 }
 .A1{
@@ -161,7 +151,6 @@ h3{
     text-align: center;
 }
 footer{
-    font-family: 'Roboto Condensed', sans-serif;
     height: 10vh;
     background-color: var(--main-bg-color);
     color: white;
