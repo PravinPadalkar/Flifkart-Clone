@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 
 *{
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
@@ -15,18 +13,22 @@
 header{
     background-color: var(--main-bg-color);
 }
+body{
+    max-width: 1450px;
+    margin-inline: auto;
+}
 nav{
-    height: 52px;
+    height: 72px;
     display: flex;
+    padding: 10px;
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
 }
 .logo{
     display: flex;
-    padding: 5px;
     flex-direction: column;
-    position: relative;
-    margin-left: 7vw;
+
 }
 .logo img{
     width: 90px;
@@ -39,53 +41,36 @@ nav{
     width: 15px;
 }
 .search{
-    max-width: 35vw;
-    height: 30px;
-    border: 1px solid black;
-    outline: none;
-    position: relative;
-    margin-left: 10px;
+    width: 700px;
+    border-radius: 8px;
 }
 .search input{
-    display: inline;
-    width: 35vw;
-    height: 30px;
+    width: 90%;
     padding: 5px;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 12px;
+    font-weight: 500;
+    outline: none;
 }
-.btns{
-    min-height: 30px;
-    background-color: var(--main-bg-color);
-    position: absolute;
-    left: 65%;
-    display: flex;
-}
-.btns button{
-    width: 70px;
-    height: 31px;
+.btns a{
+    padding: 6px 12px;
     font-weight: 600;
     font-size: 15px;
     background-color: white;
-    outline: none;
-    border: none;
-    border-radius: 3px;
-    margin: 0px 15px;
-} 
-button a{
+    border-radius: 4px;
     text-decoration: none;
+    margin-inline:16px;
+    align-items: end;
 }
 .A1{
-    min-width: 90vw;
+    max-width: 1200px;
     height: 100px;
-    padding: 50px;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    padding: 10px;
+    margin: 10px auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    overflow: scroll;
-    box-shadow: 10px 4px 4px rgb(212, 217, 219);
+    box-shadow: 0px 0px 0px 0px #ddd;
+    overflow: hidden;
 }
 .A1 div{
     display: flex;
@@ -93,36 +78,27 @@ button a{
 }
 .A1 img{
     margin: 0px 25px;
-    width: 70px;
+    max-width: 70px;
 }
 .A1 h4{
-    margin: 0px 25px;
-}
-.A1 img :hover{
-    cursor: pointer;
+    text-align: center;
 }
 .mySlides img{
-    width: 80%;
-    min-height: 120px;
-    position: relative;
-    left: 10%;
+    max-width: 100%;
+    display: block;
+    margin: 32px auto;
+    
 }
 .box{
     margin: 30px 10px;
     background-color: rgb(250, 250, 244);
 }
-h2{
-    display: inline;
-}
+
 .box button{
     background-color: var(--main-bg-color);
-    min-width:80px;
     color:white ;
-    height: 36px;
-    border-radius: 6px;
-    position: absolute;
+    border-radius: 8px;
     cursor: pointer;
-    right: 20px;
 }
 h3{
     color: rgb(207, 158, 33);
@@ -132,7 +108,7 @@ h3{
     display: flex;
     justify-content: start;
     margin: 20px 15px;
-    overflow: scroll;
+    overflow: hidden;
 }
 .content{
     display: flex;
@@ -155,3 +131,15 @@ footer{
     align-items: center;
 }
 
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    .search{
+        display: none;
+    }
+   .btns a{
+    margin-inline: 4px;
+   }
+  }
